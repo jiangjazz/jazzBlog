@@ -1,0 +1,785 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly idealTree:prePrune JazzBlog@1.6.0
+20 silly idealTree:prePrune ├── accepts@1.0.7
+20 silly idealTree:prePrune ├── after@0.8.1
+20 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6
+20 silly idealTree:prePrune ├── base64-arraybuffer@0.1.2
+20 silly idealTree:prePrune ├── base64-url@1.2.1
+20 silly idealTree:prePrune ├── base64id@0.1.0
+20 silly idealTree:prePrune ├── basic-auth@1.0.0
+20 silly idealTree:prePrune ├── benchmark@1.0.0
+20 silly idealTree:prePrune ├── better-assert@1.0.2
+20 silly idealTree:prePrune ├── blob@0.0.2
+20 silly idealTree:prePrune ├── bluebird@2.9.26
+20 silly idealTree:prePrune ├─┬ body-parser@1.8.4
+20 silly idealTree:prePrune │ ├── depd@0.4.5
+20 silly idealTree:prePrune │ ├── media-typer@0.3.0
+20 silly idealTree:prePrune │ ├── mime-types@2.0.14
+20 silly idealTree:prePrune │ ├── qs@2.2.4
+20 silly idealTree:prePrune │ └── type-is@1.5.7
+20 silly idealTree:prePrune ├── bson@0.4.19
+20 silly idealTree:prePrune ├── buffer-crc32@0.2.3
+20 silly idealTree:prePrune ├── bytes@1.0.0
+20 silly idealTree:prePrune ├── callsite@1.0.0
+20 silly idealTree:prePrune ├── commander@0.6.1
+20 silly idealTree:prePrune ├── component-bind@1.0.0
+20 silly idealTree:prePrune ├── component-emitter@1.1.2
+20 silly idealTree:prePrune ├── component-inherit@0.0.3
+20 silly idealTree:prePrune ├── compressible@1.1.1
+20 silly idealTree:prePrune ├─┬ compression@1.0.11
+20 silly idealTree:prePrune │ └── vary@1.0.1
+20 silly idealTree:prePrune ├── connect-flash@0.1.1
+20 silly idealTree:prePrune ├── connect-mongo@0.4.2
+20 silly idealTree:prePrune ├─┬ cookie-parser@1.3.5
+20 silly idealTree:prePrune │ ├── cookie-signature@1.0.6
+20 silly idealTree:prePrune │ └── cookie@0.1.3
+20 silly idealTree:prePrune ├── cookie-signature@1.0.4
+20 silly idealTree:prePrune ├── cookie@0.1.2
+20 silly idealTree:prePrune ├── core-util-is@1.0.1
+20 silly idealTree:prePrune ├── debug@1.0.4
+20 silly idealTree:prePrune ├── depd@0.4.4
+20 silly idealTree:prePrune ├── destroy@1.0.3
+20 silly idealTree:prePrune ├── ee-first@1.0.5
+20 silly idealTree:prePrune ├── ejs@1.0.0
+20 silly idealTree:prePrune ├── emitter@1.0.1
+20 silly idealTree:prePrune ├─┬ engine.io-client@1.4.0
+20 silly idealTree:prePrune │ ├── debug@0.7.4
+20 silly idealTree:prePrune │ └── parseuri@0.0.4
+20 silly idealTree:prePrune ├── engine.io-parser@1.1.0
+20 silly idealTree:prePrune ├─┬ engine.io@1.4.0
+20 silly idealTree:prePrune │ └── debug@1.0.3
+20 silly idealTree:prePrune ├── escape-html@1.0.1
+20 silly idealTree:prePrune ├── express-session@1.7.6
+20 silly idealTree:prePrune ├── express@4.8.8
+20 silly idealTree:prePrune ├── finalhandler@0.1.0
+20 silly idealTree:prePrune ├── fresh@0.2.2
+20 silly idealTree:prePrune ├── global@2.0.1
+20 silly idealTree:prePrune ├── has-binary-data@0.1.3
+20 silly idealTree:prePrune ├── has-binary@0.1.5
+20 silly idealTree:prePrune ├── has-cors@1.0.3
+20 silly idealTree:prePrune ├── hooks@0.2.1
+20 silly idealTree:prePrune ├── iconv-lite@0.4.4
+20 silly idealTree:prePrune ├── indexof@0.0.1
+20 silly idealTree:prePrune ├── inherits@2.0.1
+20 silly idealTree:prePrune ├── ipaddr.js@0.1.2
+20 silly idealTree:prePrune ├── isarray@0.0.1
+20 silly idealTree:prePrune ├── json3@3.2.6
+20 silly idealTree:prePrune ├── kerberos@0.0.11
+20 silly idealTree:prePrune ├── media-typer@0.2.0
+20 silly idealTree:prePrune ├── merge-descriptors@0.0.2
+20 silly idealTree:prePrune ├─┬ method-override@2.3.5
+20 silly idealTree:prePrune │ ├── debug@2.2.0
+20 silly idealTree:prePrune │ ├── methods@1.1.1
+20 silly idealTree:prePrune │ ├── ms@0.7.1
+20 silly idealTree:prePrune │ └── vary@1.0.1
+20 silly idealTree:prePrune ├── methods@1.1.0
+20 silly idealTree:prePrune ├── mime-db@1.12.0
+20 silly idealTree:prePrune ├── mime-types@1.0.2
+20 silly idealTree:prePrune ├── mime@1.2.11
+20 silly idealTree:prePrune ├─┬ mongodb@1.4.38
+20 silly idealTree:prePrune │ └── bson@0.2.22
+20 silly idealTree:prePrune ├─┬ mongoose@3.8.36
+20 silly idealTree:prePrune │ └── ms@0.1.0
+20 silly idealTree:prePrune ├─┬ morgan@1.3.2
+20 silly idealTree:prePrune │ └── depd@0.4.5
+20 silly idealTree:prePrune ├── mpath@0.1.1
+20 silly idealTree:prePrune ├── mpromise@0.4.3
+20 silly idealTree:prePrune ├─┬ mquery@1.6.1
+20 silly idealTree:prePrune │ ├── debug@2.2.0
+20 silly idealTree:prePrune │ └── ms@0.7.1
+20 silly idealTree:prePrune ├── ms@0.6.2
+20 silly idealTree:prePrune ├── muri@1.1.0
+20 silly idealTree:prePrune ├── mz@1.3.0
+20 silly idealTree:prePrune ├── nan@1.8.4
+20 silly idealTree:prePrune ├── native-or-bluebird@1.2.0
+20 silly idealTree:prePrune ├── negotiator@0.4.7
+20 silly idealTree:prePrune ├── object-component@0.0.3
+20 silly idealTree:prePrune ├── on-finished@2.1.0
+20 silly idealTree:prePrune ├── on-headers@1.0.1
+20 silly idealTree:prePrune ├── options@0.0.6
+20 silly idealTree:prePrune ├── parsejson@0.0.1
+20 silly idealTree:prePrune ├── parseqs@0.0.2
+20 silly idealTree:prePrune ├── parseuri@0.0.2
+20 silly idealTree:prePrune ├── parseurl@1.3.0
+20 silly idealTree:prePrune ├── passport-local@1.0.0
+20 silly idealTree:prePrune ├── passport-strategy@1.0.0
+20 silly idealTree:prePrune ├── passport@0.2.2
+20 silly idealTree:prePrune ├── path-to-regexp@0.1.3
+20 silly idealTree:prePrune ├── pause@0.0.1
+20 silly idealTree:prePrune ├── process-nextick-args@1.0.3
+20 silly idealTree:prePrune ├── proxy-addr@1.0.1
+20 silly idealTree:prePrune ├── qs@2.2.2
+20 silly idealTree:prePrune ├── range-parser@1.0.0
+20 silly idealTree:prePrune ├── raw-body@1.3.0
+20 silly idealTree:prePrune ├── readable-stream@2.0.4
+20 silly idealTree:prePrune ├── regexp-clone@0.0.1
+20 silly idealTree:prePrune ├── send@0.8.5
+20 silly idealTree:prePrune ├── serve-static@1.5.4
+20 silly idealTree:prePrune ├── sliced@0.0.5
+20 silly idealTree:prePrune ├─┬ socket.io-adapter@0.2.0
+20 silly idealTree:prePrune │ ├── debug@0.7.4
+20 silly idealTree:prePrune │ └── socket.io-parser@2.1.2
+20 silly idealTree:prePrune ├─┬ socket.io-client@1.1.0
+20 silly idealTree:prePrune │ ├── debug@0.7.4
+20 silly idealTree:prePrune │ └── socket.io-parser@2.2.2
+20 silly idealTree:prePrune ├─┬ socket.io-parser@2.2.1
+20 silly idealTree:prePrune │ └── debug@0.7.4
+20 silly idealTree:prePrune ├─┬ socket.io@1.1.0
+20 silly idealTree:prePrune │ └── debug@0.7.4
+20 silly idealTree:prePrune ├── string_decoder@0.10.31
+20 silly idealTree:prePrune ├── thenify-all@1.6.0
+20 silly idealTree:prePrune ├── thenify@3.1.1
+20 silly idealTree:prePrune ├── tinycolor@0.0.1
+20 silly idealTree:prePrune ├── to-array@0.1.3
+20 silly idealTree:prePrune ├── type-is@1.3.2
+20 silly idealTree:prePrune ├── uid-safe@1.0.1
+20 silly idealTree:prePrune ├── utf8@2.0.0
+20 silly idealTree:prePrune ├── util-deprecate@1.0.2
+20 silly idealTree:prePrune ├── utils-merge@1.0.0
+20 silly idealTree:prePrune ├── vary@0.1.0
+20 silly idealTree:prePrune ├─┬ ws@0.4.31
+20 silly idealTree:prePrune │ └── nan@0.3.2
+20 silly idealTree:prePrune └── xmlhttprequest@1.5.0
+21 silly loadIdealTree Finishing
+22 silly currentTree JazzBlog@1.6.0
+22 silly currentTree ├── accepts@1.0.7
+22 silly currentTree ├── after@0.8.1
+22 silly currentTree ├── arraybuffer.slice@0.0.6
+22 silly currentTree ├── base64-arraybuffer@0.1.2
+22 silly currentTree ├── base64-url@1.2.1
+22 silly currentTree ├── base64id@0.1.0
+22 silly currentTree ├── basic-auth@1.0.0
+22 silly currentTree ├── benchmark@1.0.0
+22 silly currentTree ├── better-assert@1.0.2
+22 silly currentTree ├── blob@0.0.2
+22 silly currentTree ├── bluebird@2.9.26
+22 silly currentTree ├─┬ body-parser@1.8.4
+22 silly currentTree │ ├── depd@0.4.5
+22 silly currentTree │ ├── media-typer@0.3.0
+22 silly currentTree │ ├── mime-types@2.0.14
+22 silly currentTree │ ├── qs@2.2.4
+22 silly currentTree │ └── type-is@1.5.7
+22 silly currentTree ├── bson@0.4.19
+22 silly currentTree ├── buffer-crc32@0.2.3
+22 silly currentTree ├── bytes@1.0.0
+22 silly currentTree ├── callsite@1.0.0
+22 silly currentTree ├── commander@0.6.1
+22 silly currentTree ├── component-bind@1.0.0
+22 silly currentTree ├── component-emitter@1.1.2
+22 silly currentTree ├── component-inherit@0.0.3
+22 silly currentTree ├── compressible@1.1.1
+22 silly currentTree ├─┬ compression@1.0.11
+22 silly currentTree │ └── vary@1.0.1
+22 silly currentTree ├── connect-flash@0.1.1
+22 silly currentTree ├── connect-mongo@0.4.2
+22 silly currentTree ├─┬ cookie-parser@1.3.5
+22 silly currentTree │ ├── cookie-signature@1.0.6
+22 silly currentTree │ └── cookie@0.1.3
+22 silly currentTree ├── cookie-signature@1.0.4
+22 silly currentTree ├── cookie@0.1.2
+22 silly currentTree ├── core-util-is@1.0.1
+22 silly currentTree ├── debug@1.0.4
+22 silly currentTree ├── depd@0.4.4
+22 silly currentTree ├── destroy@1.0.3
+22 silly currentTree ├── ee-first@1.0.5
+22 silly currentTree ├── ejs@1.0.0
+22 silly currentTree ├── emitter@1.0.1
+22 silly currentTree ├─┬ engine.io-client@1.4.0
+22 silly currentTree │ ├── debug@0.7.4
+22 silly currentTree │ └── parseuri@0.0.4
+22 silly currentTree ├── engine.io-parser@1.1.0
+22 silly currentTree ├─┬ engine.io@1.4.0
+22 silly currentTree │ └── debug@1.0.3
+22 silly currentTree ├── escape-html@1.0.1
+22 silly currentTree ├── express-session@1.7.6
+22 silly currentTree ├── express@4.8.8
+22 silly currentTree ├── finalhandler@0.1.0
+22 silly currentTree ├── fresh@0.2.2
+22 silly currentTree ├── global@2.0.1
+22 silly currentTree ├── has-binary-data@0.1.3
+22 silly currentTree ├── has-binary@0.1.5
+22 silly currentTree ├── has-cors@1.0.3
+22 silly currentTree ├── hooks@0.2.1
+22 silly currentTree ├── iconv-lite@0.4.4
+22 silly currentTree ├── indexof@0.0.1
+22 silly currentTree ├── inherits@2.0.1
+22 silly currentTree ├── ipaddr.js@0.1.2
+22 silly currentTree ├── isarray@0.0.1
+22 silly currentTree ├── json3@3.2.6
+22 silly currentTree ├── kerberos@0.0.11
+22 silly currentTree ├── media-typer@0.2.0
+22 silly currentTree ├── merge-descriptors@0.0.2
+22 silly currentTree ├─┬ method-override@2.3.5
+22 silly currentTree │ ├── debug@2.2.0
+22 silly currentTree │ ├── methods@1.1.1
+22 silly currentTree │ ├── ms@0.7.1
+22 silly currentTree │ └── vary@1.0.1
+22 silly currentTree ├── methods@1.1.0
+22 silly currentTree ├── mime-db@1.12.0
+22 silly currentTree ├── mime-types@1.0.2
+22 silly currentTree ├── mime@1.2.11
+22 silly currentTree ├─┬ mongodb@1.4.38
+22 silly currentTree │ └── bson@0.2.22
+22 silly currentTree ├─┬ mongoose@3.8.36
+22 silly currentTree │ └── ms@0.1.0
+22 silly currentTree ├─┬ morgan@1.3.2
+22 silly currentTree │ └── depd@0.4.5
+22 silly currentTree ├── mpath@0.1.1
+22 silly currentTree ├── mpromise@0.4.3
+22 silly currentTree ├─┬ mquery@1.6.1
+22 silly currentTree │ ├── debug@2.2.0
+22 silly currentTree │ └── ms@0.7.1
+22 silly currentTree ├── ms@0.6.2
+22 silly currentTree ├── muri@1.1.0
+22 silly currentTree ├── mz@1.3.0
+22 silly currentTree ├── nan@1.8.4
+22 silly currentTree ├── native-or-bluebird@1.2.0
+22 silly currentTree ├── negotiator@0.4.7
+22 silly currentTree ├── object-component@0.0.3
+22 silly currentTree ├── on-finished@2.1.0
+22 silly currentTree ├── on-headers@1.0.1
+22 silly currentTree ├── options@0.0.6
+22 silly currentTree ├── parsejson@0.0.1
+22 silly currentTree ├── parseqs@0.0.2
+22 silly currentTree ├── parseuri@0.0.2
+22 silly currentTree ├── parseurl@1.3.0
+22 silly currentTree ├── passport-local@1.0.0
+22 silly currentTree ├── passport-strategy@1.0.0
+22 silly currentTree ├── passport@0.2.2
+22 silly currentTree ├── path-to-regexp@0.1.3
+22 silly currentTree ├── pause@0.0.1
+22 silly currentTree ├── process-nextick-args@1.0.3
+22 silly currentTree ├── proxy-addr@1.0.1
+22 silly currentTree ├── qs@2.2.2
+22 silly currentTree ├── range-parser@1.0.0
+22 silly currentTree ├── raw-body@1.3.0
+22 silly currentTree ├── readable-stream@2.0.4
+22 silly currentTree ├── regexp-clone@0.0.1
+22 silly currentTree ├── send@0.8.5
+22 silly currentTree ├── serve-static@1.5.4
+22 silly currentTree ├── sliced@0.0.5
+22 silly currentTree ├─┬ socket.io-adapter@0.2.0
+22 silly currentTree │ ├── debug@0.7.4
+22 silly currentTree │ └── socket.io-parser@2.1.2
+22 silly currentTree ├─┬ socket.io-client@1.1.0
+22 silly currentTree │ ├── debug@0.7.4
+22 silly currentTree │ └── socket.io-parser@2.2.2
+22 silly currentTree ├─┬ socket.io-parser@2.2.1
+22 silly currentTree │ └── debug@0.7.4
+22 silly currentTree ├─┬ socket.io@1.1.0
+22 silly currentTree │ └── debug@0.7.4
+22 silly currentTree ├── string_decoder@0.10.31
+22 silly currentTree ├── thenify-all@1.6.0
+22 silly currentTree ├── thenify@3.1.1
+22 silly currentTree ├── tinycolor@0.0.1
+22 silly currentTree ├── to-array@0.1.3
+22 silly currentTree ├── type-is@1.3.2
+22 silly currentTree ├── uid-safe@1.0.1
+22 silly currentTree ├── utf8@2.0.0
+22 silly currentTree ├── util-deprecate@1.0.2
+22 silly currentTree ├── utils-merge@1.0.0
+22 silly currentTree ├── vary@0.1.0
+22 silly currentTree ├─┬ ws@0.4.31
+22 silly currentTree │ └── nan@0.3.2
+22 silly currentTree └── xmlhttprequest@1.5.0
+23 silly idealTree JazzBlog@1.6.0
+23 silly idealTree ├── accepts@1.0.7
+23 silly idealTree ├── after@0.8.1
+23 silly idealTree ├── arraybuffer.slice@0.0.6
+23 silly idealTree ├── base64-arraybuffer@0.1.2
+23 silly idealTree ├── base64-url@1.2.1
+23 silly idealTree ├── base64id@0.1.0
+23 silly idealTree ├── basic-auth@1.0.0
+23 silly idealTree ├── benchmark@1.0.0
+23 silly idealTree ├── better-assert@1.0.2
+23 silly idealTree ├── blob@0.0.2
+23 silly idealTree ├── bluebird@2.9.26
+23 silly idealTree ├─┬ body-parser@1.8.4
+23 silly idealTree │ ├── depd@0.4.5
+23 silly idealTree │ ├── media-typer@0.3.0
+23 silly idealTree │ ├── mime-types@2.0.14
+23 silly idealTree │ ├── qs@2.2.4
+23 silly idealTree │ └── type-is@1.5.7
+23 silly idealTree ├── bson@0.4.19
+23 silly idealTree ├── buffer-crc32@0.2.3
+23 silly idealTree ├── bytes@1.0.0
+23 silly idealTree ├── callsite@1.0.0
+23 silly idealTree ├── commander@0.6.1
+23 silly idealTree ├── component-bind@1.0.0
+23 silly idealTree ├── component-emitter@1.1.2
+23 silly idealTree ├── component-inherit@0.0.3
+23 silly idealTree ├── compressible@1.1.1
+23 silly idealTree ├─┬ compression@1.0.11
+23 silly idealTree │ └── vary@1.0.1
+23 silly idealTree ├── connect-flash@0.1.1
+23 silly idealTree ├── connect-mongo@0.4.2
+23 silly idealTree ├─┬ cookie-parser@1.3.5
+23 silly idealTree │ ├── cookie-signature@1.0.6
+23 silly idealTree │ └── cookie@0.1.3
+23 silly idealTree ├── cookie-signature@1.0.4
+23 silly idealTree ├── cookie@0.1.2
+23 silly idealTree ├── core-util-is@1.0.1
+23 silly idealTree ├── debug@1.0.4
+23 silly idealTree ├── depd@0.4.4
+23 silly idealTree ├── destroy@1.0.3
+23 silly idealTree ├── ee-first@1.0.5
+23 silly idealTree ├── ejs@1.0.0
+23 silly idealTree ├── emitter@1.0.1
+23 silly idealTree ├─┬ engine.io-client@1.4.0
+23 silly idealTree │ ├── debug@0.7.4
+23 silly idealTree │ └── parseuri@0.0.4
+23 silly idealTree ├── engine.io-parser@1.1.0
+23 silly idealTree ├─┬ engine.io@1.4.0
+23 silly idealTree │ └── debug@1.0.3
+23 silly idealTree ├── escape-html@1.0.1
+23 silly idealTree ├── express-session@1.7.6
+23 silly idealTree ├── express@4.8.8
+23 silly idealTree ├── finalhandler@0.1.0
+23 silly idealTree ├── fresh@0.2.2
+23 silly idealTree ├── global@2.0.1
+23 silly idealTree ├── has-binary-data@0.1.3
+23 silly idealTree ├── has-binary@0.1.5
+23 silly idealTree ├── has-cors@1.0.3
+23 silly idealTree ├── hooks@0.2.1
+23 silly idealTree ├── iconv-lite@0.4.4
+23 silly idealTree ├── indexof@0.0.1
+23 silly idealTree ├── inherits@2.0.1
+23 silly idealTree ├── ipaddr.js@0.1.2
+23 silly idealTree ├── isarray@0.0.1
+23 silly idealTree ├── json3@3.2.6
+23 silly idealTree ├── kerberos@0.0.11
+23 silly idealTree ├── media-typer@0.2.0
+23 silly idealTree ├── merge-descriptors@0.0.2
+23 silly idealTree ├─┬ method-override@2.3.5
+23 silly idealTree │ ├── debug@2.2.0
+23 silly idealTree │ ├── methods@1.1.1
+23 silly idealTree │ ├── ms@0.7.1
+23 silly idealTree │ └── vary@1.0.1
+23 silly idealTree ├── methods@1.1.0
+23 silly idealTree ├── mime-db@1.12.0
+23 silly idealTree ├── mime-types@1.0.2
+23 silly idealTree ├── mime@1.2.11
+23 silly idealTree ├─┬ mongodb@1.4.38
+23 silly idealTree │ └── bson@0.2.22
+23 silly idealTree ├─┬ mongoose@3.8.36
+23 silly idealTree │ └── ms@0.1.0
+23 silly idealTree ├─┬ morgan@1.3.2
+23 silly idealTree │ └── depd@0.4.5
+23 silly idealTree ├── mpath@0.1.1
+23 silly idealTree ├── mpromise@0.4.3
+23 silly idealTree ├─┬ mquery@1.6.1
+23 silly idealTree │ ├── debug@2.2.0
+23 silly idealTree │ └── ms@0.7.1
+23 silly idealTree ├── ms@0.6.2
+23 silly idealTree ├── muri@1.1.0
+23 silly idealTree ├── mz@1.3.0
+23 silly idealTree ├── nan@1.8.4
+23 silly idealTree ├── native-or-bluebird@1.2.0
+23 silly idealTree ├── negotiator@0.4.7
+23 silly idealTree ├── object-component@0.0.3
+23 silly idealTree ├── on-finished@2.1.0
+23 silly idealTree ├── on-headers@1.0.1
+23 silly idealTree ├── options@0.0.6
+23 silly idealTree ├── parsejson@0.0.1
+23 silly idealTree ├── parseqs@0.0.2
+23 silly idealTree ├── parseuri@0.0.2
+23 silly idealTree ├── parseurl@1.3.0
+23 silly idealTree ├── passport-local@1.0.0
+23 silly idealTree ├── passport-strategy@1.0.0
+23 silly idealTree ├── passport@0.2.2
+23 silly idealTree ├── path-to-regexp@0.1.3
+23 silly idealTree ├── pause@0.0.1
+23 silly idealTree ├── process-nextick-args@1.0.3
+23 silly idealTree ├── proxy-addr@1.0.1
+23 silly idealTree ├── qs@2.2.2
+23 silly idealTree ├── range-parser@1.0.0
+23 silly idealTree ├── raw-body@1.3.0
+23 silly idealTree ├── readable-stream@2.0.4
+23 silly idealTree ├── regexp-clone@0.0.1
+23 silly idealTree ├── send@0.8.5
+23 silly idealTree ├── serve-static@1.5.4
+23 silly idealTree ├── sliced@0.0.5
+23 silly idealTree ├─┬ socket.io-adapter@0.2.0
+23 silly idealTree │ ├── debug@0.7.4
+23 silly idealTree │ └── socket.io-parser@2.1.2
+23 silly idealTree ├─┬ socket.io-client@1.1.0
+23 silly idealTree │ ├── debug@0.7.4
+23 silly idealTree │ └── socket.io-parser@2.2.2
+23 silly idealTree ├─┬ socket.io-parser@2.2.1
+23 silly idealTree │ └── debug@0.7.4
+23 silly idealTree ├─┬ socket.io@1.1.0
+23 silly idealTree │ └── debug@0.7.4
+23 silly idealTree ├── string_decoder@0.10.31
+23 silly idealTree ├── thenify-all@1.6.0
+23 silly idealTree ├── thenify@3.1.1
+23 silly idealTree ├── tinycolor@0.0.1
+23 silly idealTree ├── to-array@0.1.3
+23 silly idealTree ├── type-is@1.3.2
+23 silly idealTree ├── uid-safe@1.0.1
+23 silly idealTree ├── utf8@2.0.0
+23 silly idealTree ├── util-deprecate@1.0.2
+23 silly idealTree ├── utils-merge@1.0.0
+23 silly idealTree ├── vary@0.1.0
+23 silly idealTree ├─┬ ws@0.4.31
+23 silly idealTree │ └── nan@0.3.2
+23 silly idealTree └── xmlhttprequest@1.5.0
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 silly generateActionsToTake Finishing
+27 silly diffTrees action count 0
+28 silly decomposeActions action count 0
+29 silly executeActions Starting
+30 silly install executeActions
+31 silly doSerial global-install 0
+32 silly doParallel fetch 0
+33 verbose lock using C:\Users\Jazz\AppData\Roaming\npm-cache\_locks\staging-eecb98a399a8e2c5.lock for c:\Users\Jazz\blog\node_modules\.staging
+34 silly doParallel extract 0
+35 silly doParallel preinstall 0
+36 silly doReverseSerial remove 0
+37 silly doSerial move 0
+38 silly doSerial finalize 0
+39 silly doSerial build 0
+40 silly doSerial global-link 0
+41 silly doParallel update-linked 0
+42 silly doSerial install 0
+43 silly doSerial postinstall 0
+44 verbose unlock done using C:\Users\Jazz\AppData\Roaming\npm-cache\_locks\staging-eecb98a399a8e2c5.lock for c:\Users\Jazz\blog\node_modules\.staging
+45 silly executeActions Finishing
+46 silly rollbackFailedOptional Starting
+47 silly rollbackFailedOptional Finishing
+48 silly runTopLevelLifecycles Starting
+49 silly install runTopLevelLifecycles
+50 silly preinstall JazzBlog c:\Users\Jazz\blog\JazzBlog-62e0d7630706603ee9bfcdce20db8363
+51 info lifecycle JazzBlog@1.6.0~preinstall: JazzBlog@1.6.0
+52 silly lifecycle JazzBlog@1.6.0~preinstall: no script for preinstall, continuing
+53 silly build JazzBlog
+54 info linkStuff JazzBlog@1.6.0
+55 silly linkStuff JazzBlog@1.6.0 has c:\Users\Jazz as its parent node_modules
+56 verbose linkBins JazzBlog@1.6.0
+57 verbose linkMans JazzBlog@1.6.0
+58 verbose rebuildBundles JazzBlog@1.6.0
+59 verbose rebuildBundles [ '.bin',
+59 verbose rebuildBundles   'accepts',
+59 verbose rebuildBundles   'after',
+59 verbose rebuildBundles   'arraybuffer.slice',
+59 verbose rebuildBundles   'base64-arraybuffer',
+59 verbose rebuildBundles   'base64-url',
+59 verbose rebuildBundles   'base64id',
+59 verbose rebuildBundles   'basic-auth',
+59 verbose rebuildBundles   'benchmark',
+59 verbose rebuildBundles   'better-assert',
+59 verbose rebuildBundles   'blob',
+59 verbose rebuildBundles   'bluebird',
+59 verbose rebuildBundles   'body-parser',
+59 verbose rebuildBundles   'bson',
+59 verbose rebuildBundles   'buffer-crc32',
+59 verbose rebuildBundles   'bytes',
+59 verbose rebuildBundles   'callsite',
+59 verbose rebuildBundles   'commander',
+59 verbose rebuildBundles   'component-bind',
+59 verbose rebuildBundles   'component-emitter',
+59 verbose rebuildBundles   'component-inherit',
+59 verbose rebuildBundles   'compressible',
+59 verbose rebuildBundles   'compression',
+59 verbose rebuildBundles   'connect-flash',
+59 verbose rebuildBundles   'connect-mongo',
+59 verbose rebuildBundles   'cookie',
+59 verbose rebuildBundles   'cookie-parser',
+59 verbose rebuildBundles   'cookie-signature',
+59 verbose rebuildBundles   'core-util-is',
+59 verbose rebuildBundles   'debug',
+59 verbose rebuildBundles   'depd',
+59 verbose rebuildBundles   'destroy',
+59 verbose rebuildBundles   'ee-first',
+59 verbose rebuildBundles   'ejs',
+59 verbose rebuildBundles   'emitter',
+59 verbose rebuildBundles   'engine.io',
+59 verbose rebuildBundles   'engine.io-client',
+59 verbose rebuildBundles   'engine.io-parser',
+59 verbose rebuildBundles   'escape-html',
+59 verbose rebuildBundles   'express',
+59 verbose rebuildBundles   'express-session',
+59 verbose rebuildBundles   'finalhandler',
+59 verbose rebuildBundles   'fresh',
+59 verbose rebuildBundles   'global',
+59 verbose rebuildBundles   'has-binary',
+59 verbose rebuildBundles   'has-binary-data',
+59 verbose rebuildBundles   'has-cors',
+59 verbose rebuildBundles   'hooks',
+59 verbose rebuildBundles   'iconv-lite',
+59 verbose rebuildBundles   'indexof',
+59 verbose rebuildBundles   'inherits',
+59 verbose rebuildBundles   'ipaddr.js',
+59 verbose rebuildBundles   'isarray',
+59 verbose rebuildBundles   'json3',
+59 verbose rebuildBundles   'kerberos',
+59 verbose rebuildBundles   'media-typer',
+59 verbose rebuildBundles   'merge-descriptors',
+59 verbose rebuildBundles   'method-override',
+59 verbose rebuildBundles   'methods',
+59 verbose rebuildBundles   'mime',
+59 verbose rebuildBundles   'mime-db',
+59 verbose rebuildBundles   'mime-types',
+59 verbose rebuildBundles   'mongodb',
+59 verbose rebuildBundles   'mongoose',
+59 verbose rebuildBundles   'morgan',
+59 verbose rebuildBundles   'mpath',
+59 verbose rebuildBundles   'mpromise',
+59 verbose rebuildBundles   'mquery',
+59 verbose rebuildBundles   'ms',
+59 verbose rebuildBundles   'muri',
+59 verbose rebuildBundles   'mz',
+59 verbose rebuildBundles   'nan',
+59 verbose rebuildBundles   'native-or-bluebird',
+59 verbose rebuildBundles   'negotiator',
+59 verbose rebuildBundles   'object-component',
+59 verbose rebuildBundles   'on-finished',
+59 verbose rebuildBundles   'on-headers',
+59 verbose rebuildBundles   'options',
+59 verbose rebuildBundles   'parsejson',
+59 verbose rebuildBundles   'parseqs',
+59 verbose rebuildBundles   'parseuri',
+59 verbose rebuildBundles   'parseurl',
+59 verbose rebuildBundles   'passport',
+59 verbose rebuildBundles   'passport-local',
+59 verbose rebuildBundles   'passport-strategy',
+59 verbose rebuildBundles   'path-to-regexp',
+59 verbose rebuildBundles   'pause',
+59 verbose rebuildBundles   'process-nextick-args',
+59 verbose rebuildBundles   'proxy-addr',
+59 verbose rebuildBundles   'qs',
+59 verbose rebuildBundles   'range-parser',
+59 verbose rebuildBundles   'raw-body',
+59 verbose rebuildBundles   'readable-stream',
+59 verbose rebuildBundles   'regexp-clone',
+59 verbose rebuildBundles   'send',
+59 verbose rebuildBundles   'serve-static',
+59 verbose rebuildBundles   'sliced',
+59 verbose rebuildBundles   'socket.io',
+59 verbose rebuildBundles   'socket.io-adapter',
+59 verbose rebuildBundles   'socket.io-client',
+59 verbose rebuildBundles   'socket.io-parser',
+59 verbose rebuildBundles   'string_decoder',
+59 verbose rebuildBundles   'thenify',
+59 verbose rebuildBundles   'thenify-all',
+59 verbose rebuildBundles   'tinycolor',
+59 verbose rebuildBundles   'to-array',
+59 verbose rebuildBundles   'type-is',
+59 verbose rebuildBundles   'uid-safe',
+59 verbose rebuildBundles   'utf8',
+59 verbose rebuildBundles   'util-deprecate',
+59 verbose rebuildBundles   'utils-merge',
+59 verbose rebuildBundles   'vary',
+59 verbose rebuildBundles   'ws',
+59 verbose rebuildBundles   'xmlhttprequest' ]
+60 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\accepts
+61 info build c:\Users\Jazz\blog\node_modules\accepts
+62 info lifecycle accepts@1.0.7~preinstall: accepts@1.0.7
+63 silly lifecycle accepts@1.0.7~preinstall: no script for preinstall, continuing
+64 info linkStuff accepts@1.0.7
+65 silly linkStuff accepts@1.0.7 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+66 verbose linkBins accepts@1.0.7
+67 verbose linkMans accepts@1.0.7
+68 verbose rebuildBundles accepts@1.0.7
+69 info lifecycle accepts@1.0.7~install: accepts@1.0.7
+70 silly lifecycle accepts@1.0.7~install: no script for install, continuing
+71 info lifecycle accepts@1.0.7~postinstall: accepts@1.0.7
+72 silly lifecycle accepts@1.0.7~postinstall: no script for postinstall, continuing
+73 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\after
+74 info build c:\Users\Jazz\blog\node_modules\after
+75 info lifecycle after@0.8.1~preinstall: after@0.8.1
+76 silly lifecycle after@0.8.1~preinstall: no script for preinstall, continuing
+77 info linkStuff after@0.8.1
+78 silly linkStuff after@0.8.1 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+79 verbose linkBins after@0.8.1
+80 verbose linkMans after@0.8.1
+81 verbose rebuildBundles after@0.8.1
+82 info lifecycle after@0.8.1~install: after@0.8.1
+83 silly lifecycle after@0.8.1~install: no script for install, continuing
+84 info lifecycle after@0.8.1~postinstall: after@0.8.1
+85 silly lifecycle after@0.8.1~postinstall: no script for postinstall, continuing
+86 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\arraybuffer.slice
+87 info build c:\Users\Jazz\blog\node_modules\arraybuffer.slice
+88 info lifecycle arraybuffer.slice@0.0.6~preinstall: arraybuffer.slice@0.0.6
+89 silly lifecycle arraybuffer.slice@0.0.6~preinstall: no script for preinstall, continuing
+90 info linkStuff arraybuffer.slice@0.0.6
+91 silly linkStuff arraybuffer.slice@0.0.6 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+92 verbose linkBins arraybuffer.slice@0.0.6
+93 verbose linkMans arraybuffer.slice@0.0.6
+94 verbose rebuildBundles arraybuffer.slice@0.0.6
+95 info lifecycle arraybuffer.slice@0.0.6~install: arraybuffer.slice@0.0.6
+96 silly lifecycle arraybuffer.slice@0.0.6~install: no script for install, continuing
+97 info lifecycle arraybuffer.slice@0.0.6~postinstall: arraybuffer.slice@0.0.6
+98 silly lifecycle arraybuffer.slice@0.0.6~postinstall: no script for postinstall, continuing
+99 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\base64-arraybuffer
+100 info build c:\Users\Jazz\blog\node_modules\base64-arraybuffer
+101 info lifecycle base64-arraybuffer@0.1.2~preinstall: base64-arraybuffer@0.1.2
+102 silly lifecycle base64-arraybuffer@0.1.2~preinstall: no script for preinstall, continuing
+103 info linkStuff base64-arraybuffer@0.1.2
+104 silly linkStuff base64-arraybuffer@0.1.2 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+105 verbose linkBins base64-arraybuffer@0.1.2
+106 verbose linkMans base64-arraybuffer@0.1.2
+107 verbose rebuildBundles base64-arraybuffer@0.1.2
+108 info lifecycle base64-arraybuffer@0.1.2~install: base64-arraybuffer@0.1.2
+109 silly lifecycle base64-arraybuffer@0.1.2~install: no script for install, continuing
+110 info lifecycle base64-arraybuffer@0.1.2~postinstall: base64-arraybuffer@0.1.2
+111 silly lifecycle base64-arraybuffer@0.1.2~postinstall: no script for postinstall, continuing
+112 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\base64-url
+113 info build c:\Users\Jazz\blog\node_modules\base64-url
+114 info lifecycle base64-url@1.2.1~preinstall: base64-url@1.2.1
+115 silly lifecycle base64-url@1.2.1~preinstall: no script for preinstall, continuing
+116 info linkStuff base64-url@1.2.1
+117 silly linkStuff base64-url@1.2.1 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+118 verbose linkBins base64-url@1.2.1
+119 verbose linkMans base64-url@1.2.1
+120 verbose rebuildBundles base64-url@1.2.1
+121 info lifecycle base64-url@1.2.1~install: base64-url@1.2.1
+122 silly lifecycle base64-url@1.2.1~install: no script for install, continuing
+123 info lifecycle base64-url@1.2.1~postinstall: base64-url@1.2.1
+124 silly lifecycle base64-url@1.2.1~postinstall: no script for postinstall, continuing
+125 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\base64id
+126 info build c:\Users\Jazz\blog\node_modules\base64id
+127 info lifecycle base64id@0.1.0~preinstall: base64id@0.1.0
+128 silly lifecycle base64id@0.1.0~preinstall: no script for preinstall, continuing
+129 info linkStuff base64id@0.1.0
+130 silly linkStuff base64id@0.1.0 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+131 verbose linkBins base64id@0.1.0
+132 verbose linkMans base64id@0.1.0
+133 verbose rebuildBundles base64id@0.1.0
+134 info lifecycle base64id@0.1.0~install: base64id@0.1.0
+135 silly lifecycle base64id@0.1.0~install: no script for install, continuing
+136 info lifecycle base64id@0.1.0~postinstall: base64id@0.1.0
+137 silly lifecycle base64id@0.1.0~postinstall: no script for postinstall, continuing
+138 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\basic-auth
+139 info build c:\Users\Jazz\blog\node_modules\basic-auth
+140 info lifecycle basic-auth@1.0.0~preinstall: basic-auth@1.0.0
+141 silly lifecycle basic-auth@1.0.0~preinstall: no script for preinstall, continuing
+142 info linkStuff basic-auth@1.0.0
+143 silly linkStuff basic-auth@1.0.0 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+144 verbose linkBins basic-auth@1.0.0
+145 verbose linkMans basic-auth@1.0.0
+146 verbose rebuildBundles basic-auth@1.0.0
+147 info lifecycle basic-auth@1.0.0~install: basic-auth@1.0.0
+148 silly lifecycle basic-auth@1.0.0~install: no script for install, continuing
+149 info lifecycle basic-auth@1.0.0~postinstall: basic-auth@1.0.0
+150 silly lifecycle basic-auth@1.0.0~postinstall: no script for postinstall, continuing
+151 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\benchmark
+152 info build c:\Users\Jazz\blog\node_modules\benchmark
+153 info lifecycle benchmark@1.0.0~preinstall: benchmark@1.0.0
+154 silly lifecycle benchmark@1.0.0~preinstall: no script for preinstall, continuing
+155 info linkStuff benchmark@1.0.0
+156 silly linkStuff benchmark@1.0.0 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+157 verbose linkBins benchmark@1.0.0
+158 verbose linkMans benchmark@1.0.0
+159 verbose rebuildBundles benchmark@1.0.0
+160 info lifecycle benchmark@1.0.0~install: benchmark@1.0.0
+161 silly lifecycle benchmark@1.0.0~install: no script for install, continuing
+162 info lifecycle benchmark@1.0.0~postinstall: benchmark@1.0.0
+163 silly lifecycle benchmark@1.0.0~postinstall: no script for postinstall, continuing
+164 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\better-assert
+165 info build c:\Users\Jazz\blog\node_modules\better-assert
+166 info lifecycle better-assert@1.0.2~preinstall: better-assert@1.0.2
+167 silly lifecycle better-assert@1.0.2~preinstall: no script for preinstall, continuing
+168 info linkStuff better-assert@1.0.2
+169 silly linkStuff better-assert@1.0.2 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+170 verbose linkBins better-assert@1.0.2
+171 verbose linkMans better-assert@1.0.2
+172 verbose rebuildBundles better-assert@1.0.2
+173 info lifecycle better-assert@1.0.2~install: better-assert@1.0.2
+174 silly lifecycle better-assert@1.0.2~install: no script for install, continuing
+175 info lifecycle better-assert@1.0.2~postinstall: better-assert@1.0.2
+176 silly lifecycle better-assert@1.0.2~postinstall: no script for postinstall, continuing
+177 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\blob
+178 info build c:\Users\Jazz\blog\node_modules\blob
+179 info lifecycle blob@0.0.2~preinstall: blob@0.0.2
+180 silly lifecycle blob@0.0.2~preinstall: no script for preinstall, continuing
+181 info linkStuff blob@0.0.2
+182 silly linkStuff blob@0.0.2 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+183 verbose linkBins blob@0.0.2
+184 verbose linkMans blob@0.0.2
+185 verbose rebuildBundles blob@0.0.2
+186 info lifecycle blob@0.0.2~install: blob@0.0.2
+187 silly lifecycle blob@0.0.2~install: no script for install, continuing
+188 info lifecycle blob@0.0.2~postinstall: blob@0.0.2
+189 silly lifecycle blob@0.0.2~postinstall: no script for postinstall, continuing
+190 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\bluebird
+191 info build c:\Users\Jazz\blog\node_modules\bluebird
+192 info lifecycle bluebird@2.9.26~preinstall: bluebird@2.9.26
+193 silly lifecycle bluebird@2.9.26~preinstall: no script for preinstall, continuing
+194 info linkStuff bluebird@2.9.26
+195 silly linkStuff bluebird@2.9.26 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+196 verbose linkBins bluebird@2.9.26
+197 verbose linkMans bluebird@2.9.26
+198 verbose rebuildBundles bluebird@2.9.26
+199 info lifecycle bluebird@2.9.26~install: bluebird@2.9.26
+200 silly lifecycle bluebird@2.9.26~install: no script for install, continuing
+201 info lifecycle bluebird@2.9.26~postinstall: bluebird@2.9.26
+202 silly lifecycle bluebird@2.9.26~postinstall: no script for postinstall, continuing
+203 verbose rebuild bundle c:\Users\Jazz\blog\node_modules\bson
+204 info build c:\Users\Jazz\blog\node_modules\bson
+205 info lifecycle bson@0.4.19~preinstall: bson@0.4.19
+206 silly lifecycle bson@0.4.19~preinstall: no script for preinstall, continuing
+207 info linkStuff bson@0.4.19
+208 silly linkStuff bson@0.4.19 has c:\Users\Jazz\blog\node_modules as its parent node_modules
+209 verbose linkBins bson@0.4.19
+210 verbose linkMans bson@0.4.19
+211 verbose rebuildBundles bson@0.4.19
+212 info lifecycle bson@0.4.19~install: bson@0.4.19
+213 verbose lifecycle bson@0.4.19~install: unsafe-perm in lifecycle true
+214 verbose lifecycle bson@0.4.19~install: PATH: c:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;c:\Users\Jazz\blog\node_modules\bson\node_modules\.bin;c:\Users\Jazz\blog\node_modules\.bin;c:\Users\Jazz\bin;.;C:\Program Files (x86)\Git\local\bin;C:\Program Files (x86)\Git\mingw\bin;C:\Program Files (x86)\Git\bin;c:\WINDOWS\system32;c:\WINDOWS;c:\WINDOWS\System32\Wbem;c:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Program Files\TortoiseSVN\bin;c:\Program Files\nodejs\;c:\Program Files (x86)\CloudFoundry;c:\Users\Jazz\AppData\Roaming\npm
+215 verbose lifecycle bson@0.4.19~install: CWD: c:\Users\Jazz\blog\node_modules\bson
+216 silly lifecycle bson@0.4.19~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+217 silly lifecycle bson@0.4.19~install: Returned: code: 1  signal: null
+218 info lifecycle bson@0.4.19~install: Failed to exec install script
+219 warn EPACKAGEJSON JazzBlog@1.6.0 No description
+220 warn EPACKAGEJSON JazzBlog@1.6.0 No repository field.
+221 warn EPACKAGEJSON JazzBlog@1.6.0 No license field.
+222 verbose stack Error: bson@0.4.19 install: `node-gyp rebuild`
+222 verbose stack Exit status 1
+222 verbose stack     at EventEmitter.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:233:16)
+222 verbose stack     at emitTwo (events.js:87:13)
+222 verbose stack     at EventEmitter.emit (events.js:172:7)
+222 verbose stack     at ChildProcess.<anonymous> (c:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+222 verbose stack     at emitTwo (events.js:87:13)
+222 verbose stack     at ChildProcess.emit (events.js:172:7)
+222 verbose stack     at maybeClose (internal/child_process.js:818:16)
+222 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+223 verbose pkgid bson@0.4.19
+224 verbose cwd c:\Users\Jazz\blog
+225 error Windows_NT 10.0.10586
+226 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+227 error node v5.0.0
+228 error npm  v3.3.6
+229 error code ELIFECYCLE
+230 error bson@0.4.19 install: `node-gyp rebuild`
+230 error Exit status 1
+231 error Failed at the bson@0.4.19 install script 'node-gyp rebuild'.
+231 error This is most likely a problem with the bson package,
+231 error not with npm itself.
+231 error Tell the author that this fails on your system:
+231 error     node-gyp rebuild
+231 error You can get their info via:
+231 error     npm owner ls bson
+231 error There is likely additional logging output above.
+232 verbose exit [ 1, true ]

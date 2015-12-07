@@ -1,0 +1,9 @@
+{
+    "name" : "jazzBlog-ag",
+    "version" : "1.6.0",
+    "dependencies": {
+        "angular": "~1.2",
+        "angular-route": "~1.2",
+        "angular-resource": "~1.2"
+    }
+}

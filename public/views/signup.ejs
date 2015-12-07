@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册</title>
+    <link rel='icon' href='images/ico/ico.png' type='mage/x-ico' />
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/css/nec.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/css/signMod.css"></head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-logo f-fl">
+                <h1 class="logo">
+                    <a href="/">JasonJiang</a>
+                </h1>
+            </div>
+            <div class="header-collaspe">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </div>
+            <div class="header-collgroup">
+                <div class="header-nav f-fl">
+                    <ul class="ul-reset">
+                        <li>
+                            <a href="/">主页</a>
+                        </li>
+                        <li>
+                            <a href="/chat">聊天室</a>
+                        </li>
+                        <li>
+                            <a href="/aboutMe">关于</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- 顶部导航 end -->
+
+    <% for(var i in messages) { %>
+    <div class="flash">
+        <%= messages[i] %></div>
+    <% } %>
+    <form action="/signup" method="post">
+        <div class="signup">
+            <span class="ribben">新建一个用户</span>
+            <div>
+                <p>
+                    姓:
+                    <span class="dot"></span>
+                </p>
+                <input type="text" name="firstName" />
+            </div>
+            <div>
+                <p>
+                    名:
+                    <span class="dot"></span>
+                </p>
+                <input type="text" name="lastName" />
+            </div>
+            <div>
+                <p>
+                    邮箱:
+                    <span class="dot"></span>
+                </p>
+                <input type="text" name="email" placeholder="example@email.com" required="" />
+            </div>
+            <div>
+                <p>
+                    用户名:
+                    <span class="dot"></span>
+                </p>
+                <input type="text" name="username" />
+            </div>
+            <div>
+                <p>
+                    密码:
+                    <span class="dot"></span>
+                </p>
+                <input type="password" name="password" />
+            </div>
+            <input type="submit" value="注册"></div>
+    </form>
+
+    <!-- 页脚区域 -->
+    <footer class="footer">
+        <div class="footer-content">Jason</div>
+        <div class="clearfix"></div>
+    </footer>
+    <!-- 页脚区域 end -->
+
+    <script src="js/jquery-1.8.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

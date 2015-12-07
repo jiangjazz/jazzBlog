@@ -1,0 +1,67 @@
+<section data-ng-controller="ArticlesController" data-ng-init="find()">
+
+    <article class="post" ng-controller="LoginController">
+        <div class="post-block">
+            <div data-ng-show="authentication.user">
+                    <header>
+                    <h1 class="title">
+                        你好<span data-ng-bind="authentication.user.fullName"></span>
+                    </h1>
+                </header>
+                <a href="/signout">退出登录</a>
+                <ul>
+                    <li>
+                        <a href="/#!/articles/create">发布新文章</a>
+                    </li>
+                </ul>
+            </div>
+            <div  data-ng-show="!authentication.user">
+                <h1 class="title">登录帐号，试试发布文章</h1>
+                <div class="aboutme-login">
+                    <a href="/signup">注册</a>
+                    <a href="/signin">登录</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <article class="post" data-ng-repeat="article in articles">
+        <div class="post-block">
+            <header>
+                <h1 class="title">
+                    <a data-ng-href="#!/articles/{{article._id}}" data-ng-bind="article.title"></a>
+                </h1>
+                <time datetime="Fri, 30 Oct 2015 01:11:41 GMT" class="post-time">
+                    <a href="#!/articles/{{article._id}}"  data-ng-bind="article.created | date:'medium'"></a>
+                </time>
+            </header>
+
+            <div class="post-entry">
+                <p data-ng-bind="article.content"></p>
+                <div class="read-more">
+                    <a href="#!/articles/{{article._id}}">继续阅读&gt;&gt;</a>
+                </div>
+            </div>
+
+            <footer>
+                <div class="post-comment f-fr">
+                    <a href="javascript:;" class="ds-thread-count comment-link alignright">暂无评论</a>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+        </div>
+    </article>
+
+    <article class="post" data-ng-hide="!articles || articles.length">
+        <div class="post-block">
+            <header>
+                <h1 class="title">
+                    还没有文章，试试
+                    <a href="/#!/articles/create">发布</a>
+                    一篇吧
+                </h1>
+            </header>
+        </div>
+    </article>
+</section>

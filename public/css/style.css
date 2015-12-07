@@ -18,7 +18,7 @@ h1 {font-size: 1.8em;}
 .header .header-nav li a:hover{color:#c3c3c3;}
 @media screen and (max-width: 1200px) {
     .header .header-collaspe{display: block;}
-    .header .header-collgroup {position: absolute;top: 60px;width: 100%;}
+    .header .header-collgroup {position: absolute;top: 60px;width: 100%;z-index:200;}
     .header .header-nav {display: none;width: 100%;background-color: #646262;border-top: 2px solid #fff;}
     .header .header-nav li {display: block;font-size: 14px;line-height: 40px;margin-left: 30px;}
     .header .header-nav li a {display: block;}
@@ -30,7 +30,7 @@ h1 {font-size: 1.8em;}
 
 }
 
-.g-bg{min-height: 300px;margin:auto;width:78%;}
+.g-bg{min-height: 500px;margin:auto;width:78%;}
 .articles{width: 72.5%;}
 .sidebar{width: 24%;}
 @media screen and (max-width: 1200px) {
@@ -41,22 +41,32 @@ h1 {font-size: 1.8em;}
 
 .sidebar .widget {width: 100%;background-color: #fff;margin-top: 35px;-webkit-box-shadow: 1px 2px 3px #ddd;-webkit-box-shadow: 1px 2px 3px #ddd;box-shadow: 1px 2px 3px #ddd;}
 @media screen and (max-width: 1200px) {
-    .sidebar .widget {width: 100%;float: none;}
+    .sidebar .widget {width: 100%;}
 }
 .sidebar .widget .widget-title {height: 50px;line-height: 50px;padding-left: 20px;font-size: 14px;background-color: #f5f5f5;}
 .sidebar .widget .widget-content {padding: 10px;}
 .sidebar .widget .widget-content li {margin: 10px;}
 .sidebar .widget .widget-content li a {color: #9c9c9c;}
 .sidebar .widget .widget-content li a:hover {color: #4e4e4e;}
+
+.sidebar .aboutme .aboutme-login-group{margin-top: 35px;padding:35px 5%;background-color: #fff;}
+.sidebar .aboutme .aboutme-login-group .title{padding-bottom: 20px;}
+.sidebar .aboutme .aboutme-login-group .aboutme-login{border-bottom: none;}
 .sidebar .aboutme .aboutme-headerlogo {padding-top: 5px;padding: 12%;}
 .sidebar .aboutme .aboutme-headerlogo img {max-width: 100%;display: block;margin: 0 auto;}
-.sidebar .aboutme .aboutme-name {padding: 5px 10px;font-weight: bold;}
+.sidebar .aboutme .aboutme-name {padding: 5px 10px;font-weight: bold;line-height: 2em;}
 .sidebar .aboutme .aboutme-login {padding: 5px 10px;font-size: 16px;padding-bottom: 15px;border-bottom: 1px solid #ccc;}
 .sidebar .aboutme .aboutme-login a {display: block;text-align: center;-webkit-border-radius: 5px;border-radius: 5px;padding: 5px 20px;color: #fff;background-color: #646262;border: 1px solid #ccc;}
 .sidebar .aboutme .aboutme-login a:hover {background-color: #323131;}
 .sidebar .aboutme .aboutme-email {padding: 5px 10px;font-size: 14px;color: #4864c5;margin-top: 5px;}
 .sidebar .aboutme .aboutme-create {padding: 5px 10px;font-size: 14px;padding-bottom: 15px;margin-top: 5px;border-bottom: 1px solid #ccc;}
 .sidebar .aboutme .aboutme-mainblo {width: 33%;border-right: 1px solid #ccc;text-align: center;}
+
+/* 11-16 */
+.sidebar .aboutme .signout{color:#888888;line-height: 30px;}
+.sidebar .aboutme .aboutme-login-group .aboutme-login a:first-child{margin-bottom: 10px;}
+
+
 @media screen and (max-width: 1200px) {
   .sidebar .aboutme .aboutme-mainblo {width: 33%;}
 }
@@ -68,7 +78,7 @@ article {-webkit-box-shadow: 1px 2px 3px #ddd;box-shadow: 1px 2px 3px #ddd;backg
 
 .content .post-block {margin-top: 35px;padding: 20px;}
 article header .title {font-weight: normal;}
-article header .title a {color: #444;}
+article header .title a {display: block;width: 100%;color: #444;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .articles .post-block {margin-top: 35px;padding: 20px;}
 .articles .post-time {margin-top: 10px;}
 .articles .post-time a {color: #999;font-size: 14px;}
@@ -79,3 +89,19 @@ article header time {color: #999;font: 0.9em Microsoft YaHei, "Lato", Helvetica 
 article footer {margin-top: 15px;color: #999;font-size: 0.9em;line-height: 16px;position: relative;min-height: 16px;}
 article footer a {color: #999;}
 .articles .post-comment {margin: 5px 0;}
+
+/* 11-17 */
+.articleForm .input,
+.articleForm textarea{width: 100%;margin-top: 10px;line-height: 1.5em;text-indent: 32px;border: 1px solid #f3f3f3;font-size: 20px;}
+.articles .post-block em{font-weight: normal;font-size:12px;color:#999;}
+
+.m-me{-webkit-box-shadow: 1px 2px 3px #ddd;box-shadow: 1px 2px 3px #ddd;background: #fff;font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans;color: #424242;font-size: 16px;line-height: 1.7;}
+
+.m-me .me-block{margin-top: 35px;padding: 20px;}
+.m-me .me-block .title{background-color: lightblue;}
+.m-me .me-block .ui-input {width: 100%;height: 50px;background: none;font-size: 24px;font-weight: bold;color: #fff;text-align: center;border: none;border-bottom: 2px solid white;
+}
+.m-me .post .post-block {margin-top: 35px;padding: 20px;border-top: 1px solid #ececec;}
+/*12-7*/
+.messageCenter{min-height:400px;max-height:700px;}
+.sendMsgInput{line-height: 3em;}

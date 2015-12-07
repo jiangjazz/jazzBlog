@@ -1,0 +1,25 @@
+<article class="post" data-ng-controller="ArticlesController" data-ng-init="findOne()">
+    <div class="post-block">
+        <a href="/#!/" class="back">返回</a>
+        <header>
+            <h1>修改文章</h1>
+        </header>
+        <form data-ng-submit="update()"novalidate class="articleForm">
+            <div>
+                <label for="title">标题</label>
+                <div>
+                    <input type="text" data-ng-model="article.title" id="title" placeholder="Title" required class="input"></div>
+            </div>
+            <div>
+                <label for="content">内容</label>
+                <div>
+                    <textarea data-ng-model="article.content"id="content" cols="30"rows="10" placeholder="Content"></textarea>
+                </div>
+            </div>
+            <div class="f-tar">
+                <input type="submit" value="保存" class="u-btn u-btn-c4"></div>
+            <div data-ng-show="error"> <strong data-ng-bind="error"></strong>
+            </div>
+        </form>
+    </div>
+</article>

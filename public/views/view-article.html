@@ -1,0 +1,19 @@
+<article class="post" data-ng-controller="ArticlesController" data-ng-init="findOne()">
+    <div class="post-block">
+        <a href="/#!/" class="back">返回</a>
+        <header>
+            <h1 data-ng-bind="article.title"></h1>
+        </header>
+        <div data-ng-show="authentication.user._id == article.creator._id">
+            <a href="/#!/articles/{{article._id}}/edit">修改</a>
+            <a href="#" data-ng-click="delete();">删除</a>
+        </div>
+        <small>
+            <em>发布于</em>
+            <em data-ng-bind="article.created | date:'mediumDate'"></em>
+            <em>——by</em>
+            <em data-ng-bind="article.creator.fullName"></em>
+        </small>
+        <p data-ng-bind="article.content"></p>
+    </div>
+</article>

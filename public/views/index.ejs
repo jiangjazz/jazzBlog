@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:ng="http://angularjs.org">
 <head>
     <title><%= title %></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel='icon' href='images/ico/ico.png' type='mage/x-ico' />
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="/css/nec.css">
@@ -14,7 +12,7 @@
         <div class="header-content">
             <div class="header-logo f-fl">
                 <h1 class="logo">
-                    <a href="/">JasonJiang</a>
+                    <a href="/#!/">JasonJiang</a>
                 </h1>
             </div>
             <div class="header-collaspe">
@@ -26,13 +24,13 @@
                 <div class="header-nav f-fl">
                     <ul class="ul-reset">
                         <li>
-                            <a href="/">主页</a>
+                            <a href="/#!/">主页</a>
                         </li>
                         <li>
-                            <a href="/aboutMe">关于我</a>
+                            <a href="/#!/chat">聊天室</a>
                         </li>
                         <li>
-                            <a href="/chat">聊天室</a>
+                            <a href="/aboutMe">关于</a>
                         </li>
                     </ul>
                 </div>
@@ -42,39 +40,8 @@
     </header>
     <!-- 顶部导航 end -->
 
+
     <div class="g-bg f-oh">
-        <!-- 主要内容 -->
-        <div class="articles f-fl">
-            <article class="post">
-                <div class="post-block">
-                    <header>
-                        <h1 class="title">
-                            <a href="/2015/10/30/前端集成解决方案实践（一）/">前端集成解决方案实践（一）gulp的基本使用</a>
-                        </h1>
-                        <time datetime="Fri, 30 Oct 2015 01:11:41 GMT" class="post-time">
-                            <a href="/2015/10/30/前端集成解决方案实践（一）/">2015-10-30</a>
-                        </time>
-                    </header>
-
-                    <div class="post-entry">
-                        <p>
-                            前端集成解决方案是近一两年内炒的比较火的话题，无论是在微博上，在知乎上，以及各种微信公众号，各大技术分享会上，多多少少都会出现前端集成解决方案这样的话题。究竟什么是前端集成解决方案呢。
-                            <br></p>
-                        <div class="read-more">
-                            <a href="/2015/10/30/前端集成解决方案实践（一）/#more">继续阅读&gt;&gt;</a>
-                        </div>
-                    </div>
-
-                    <footer>
-                        <div class="post-comment f-fr">
-                            <a href="/2015/10/30/前端集成解决方案实践（一）/" class="ds-thread-count comment-link alignright" data-thread-key="2015/10/30/前端集成解决方案实践（一）/" data-count-type="comments">暂无评论</a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </footer>
-                </div>
-            </article>
-        </div>
-        <!-- 主要内容 end -->
 
         <!-- 侧边栏 -->
         <div class="sidebar f-fr">
@@ -83,10 +50,9 @@
                     <img src="images/public/head.png" alt=""></div>
                 <div class="aboutme-name">
                     <h1>Jason jiang</h1>
-
                 </div>
                 <div class="aboutme-login">
-                    <a href="/about.html">More about me</a>
+                    <a href="/aboutMe">关于我</a>
                 </div>
                 <div class="aboutme-email">
                     <a href="mailto:526446847@qq.com">526446847@qq.com</a>
@@ -106,8 +72,30 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="widget aboutme" ng-controller="LoginController">
+                <div class="aboutme-login-group">
+                    <% if ( user ) { %>
+                        <h1 class="title">当前登录用户</h1>
+                        <h2>欢迎 {{name}}</h2>
+                        <a href="/signout" class="signout">退出登录</a>
+                    <% } else { %>
+                        <h1 class="title">聊天室用户</h1>
+                        <div class="aboutme-login">
+                            <a href="/signup">注册</a>
+                            <a href="/signin">登录</a>
+                        </div>
+                    <% } %>
+                </div>
+            </div> -->
         </div>
         <!-- 侧边栏 end -->
+
+        <!-- 主要内容 -->
+        <div class="articles f-fl">
+            <div ng-view></div>
+        </div>
+        <!-- 主要内容 end -->
+
 
     </div>
 
@@ -118,12 +106,39 @@
     </footer>
     <!-- 页脚区域 end -->
 
+    <script>
+    window.user = <%- user || 'null' %>;
+    console.log(window.user);
+    </script>
 
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/angular-route/angular-route.js"></script>
+    <script src="/lib/angular-resource/angular-resource.js"></script>
+
+    <script src="/module/article-module.js"></script>
+    <script src="/controllers/article.js"></script>
+    <script src="/services/article-services.js"></script>
+    <script src="/config/article-routes.js"></script>
+
+    <script src="/module/login.js"></script>
+    <script src="/controllers/login.js"></script>
+    <script src="/config/routes.js"></script>
+
+    <script src="/module/user.js"></script>
+    <script src="/services/user-services.js"></script>
+
+
+    <script src="/module/chat.js"></script>
+    <script src="/services/chat-services.js"></script>
+    <script src="/controllers/chat.js"></script>
+
+
+    <script src="/application.js"></script>
 
     <script src="js/jquery-1.8.0.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-    console.log(window.location.href);
-    </script>
+
 </body>
 </html>

@@ -6,6 +6,12 @@ var J={
             }
         };
         $('.header-collaspe').click(actions.togNav);
+
+        try{
+            S.init('welcome');
+        }catch(e){
+            console.log("这不是canvas的页面");
+        }
     }
 };
 J.homepage = (function(){

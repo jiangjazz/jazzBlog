@@ -1,0 +1,34 @@
+<section ng-controller="LoginController">
+    <div data-ng-show="!authentication.user">
+        <a href="/signup">注册</a>
+        <a href="/signin">登录</a>
+    </div>
+    <div data-ng-show="authentication.user">
+        <h1>
+            你好
+            <span data-ng-bind="authentication.user.fullName"></span>
+        </h1>
+        <a href="/signout">退出登录</a>
+        <ul>
+            <li>
+                <a href="/#!/articles">查看文章列表</a>
+            </li>
+            <li>
+                <a href="/#!/articles/create">发布新文章</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- <div class="widget aboutme" ng-controller="LoginController">
+<div class="aboutme-login-group">
+
+    <h1 class="title">聊天室用户</h1>
+
+    <div class="aboutme-login">
+        <a href="/signup">注册</a>
+        <a href="/signin">登录</a>
+    </div>
+</div>
+</div>
+-->
